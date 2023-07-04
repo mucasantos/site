@@ -10,17 +10,30 @@
 
 <body>
 
-    valor1:<input type="number" name="" id="valor1"><br>
-    valor2:<input type="number" name="" id="valor2">
+    valor1:<input type="number" name="" id="valor1" placeholder="Digite o valor..."><br>
+    valor2:<input type="number" name="" id="valor2"  onchange="mudou()">
 
     <button onclick="somar()">Somar</button>
     <button onclick="subtrair()">Subtrair</button>
     <button onclick="multiplicar()">Multiplicar</button>
     <button onclick="dividir()">Dividir</button>
 
-    <h3 id="result">Resultado</h3>
+    <h3 id="result">000</h3>
 
-    <script src="script5.js"></script>
+
+    <!--Atividade dia 04/07 com if
+Criar slide e mostrar o valor (primeira parte)
+
+Dependendo dos valores, mudar a cor da letra.
+-->
+
+<input type="range" name="" id="slide1" value="0" max="550" onchange="mudou()">
+<h3 id="valor-slide">000</h3>
+
+<div id="anima"></div>
+
+<script src="script5.js"></script>
+
 </body>
 
 </html>
