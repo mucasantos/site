@@ -4,41 +4,22 @@
 var valor1 = document.getElementById("valor1");
 var valor2 = document.getElementById("valor2");
 var mostrarResultado = document.getElementById("result");
-var divAnima = document.getElementById("anima");
 
 var meuSlide = document.getElementById("slide1");
-var valorParaSlide = document.getElementById("valor-slide");
-
-
-
-function meuSlider() {
-  var resultado = valorSlide.value;
-  valorParaSlide.textContent = valorSlide.value;
-
-  if (resultado < 10) {
-    console.log("Primeiro if");
-    valorParaSlide.style.backgroundColor = "red";
-  } else if (resultado > 50 && resultado < 100) {
-    console.log("Else if");
-    valorParaSlide.style.backgroundColor = "blue";
-  } else if (resultado > 300) {
-    console.log("Else");
-    valorParaSlide.style.backgroundColor = "violet";
-  } else {
-    valorParaSlide.style.backgroundColor = "green";
-  }
-}
-
+var mostrarValor = document.getElementById("valor-slide");
+var divAnima = document.getElementById("anima");
 
 function mudou() {
+  mostrarValor.textContent = meuSlide.value;
+
   divAnima.style.height = meuSlide.value + "px";
   divAnima.style.width = meuSlide.value + "px";
-  divAnima.style.backgroundColor = "blue";
-  if (meuSlide.value > 100 && meuSlide.value < 199) {
-    divAnima.style.backgroundColor = "red";
-  } else if (meuSlide.value > 200 && meuSlide.value < 299) {
+
+  if (meuSlide.value > 0 && meuSlide.value < 50) {
     divAnima.style.backgroundColor = "violet";
-  } else if (meuSlide.value > 299) {
+  } else if (meuSlide.value > 50 && meuSlide.value < 100) {
+    divAnima.style.backgroundColor = "red";
+  }else if (meuSlide.value > 100 && meuSlide.value < 200) {
     divAnima.style.backgroundColor = "green";
   }
 }
@@ -84,7 +65,13 @@ meuSlide.oninput = function () {
   mostrarValorSlide.textContent = this.value;
 }
 
-
+if (meuSlide.value > 100 && meuSlide.value < 199) {
+    divAnima.style.backgroundColor = "red";
+  } else if (meuSlide.value > 200 && meuSlide.value < 299) {
+    divAnima.style.backgroundColor = "violet";
+  } else if (meuSlide.value > 299) {
+    divAnima.style.backgroundColor = "green";
+  }
 
 
 */
