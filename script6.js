@@ -6,22 +6,26 @@ Papel toalha
 Sal
 Picanha
 Banana
+Maça
+Goiaba
+Melancia
 */
-var produto = document.getElementById("inserir-produto");
-var minhaLista = [];
 
 /**Numa lista, nos referimos aos itens começando pelo item 0 (zero)*/
 // usamos o index para acessar
 
+var minhaLista = [];
+var produto = document.getElementById("produto")
+
 function salvar() {
-  minhaLista.push(produto.value);
+  minhaLista.push(produto.value)
   produto.value = ''
 }
 
 function mostrarProdutos() {
-  for (var i = 0; i < minhaLista.length; i++) {
-    document.write("<p>Comprar: " + minhaLista[i] + "</p>");
-  }
+  for (var index = 0; index < minhaLista.length; index++) {
+    document.write ("<p>"+ minhaLista[index] + "</p>")
+   } 
 }
 
 const minhaDiv = document.getElementById("crescer");
@@ -31,7 +35,7 @@ async function crescerDiv() {
   for (i = 0; i < 600; i++) {
     minhaDiv.style.height = i + "px";
     minhaDiv.style.width = i + "px";
-     await delay(10);
+    await delay(10);
   }
 }
 
@@ -59,4 +63,23 @@ function delay(time) {
             minhaDiv.style.backgroundColor = "green"
         }
 
+
+        /Adicionar elementos
+
+        var main = document.getElementById("main");
+
+function salvar() {
+  minhaLista.push(produto.value);
+  produto.value = ''
+}
+
+function mostrarProdutos() {
+  main.innerHTML = ''
+
+  for (var i = 0; i < minhaLista.length; i++) {
+    var elemento = document.createElement('div')
+    elemento.innerHTML = "<p>Comprar: " + minhaLista[i] + "</p>";
+    main.appendChild(elemento)
+  }
+}
   */
