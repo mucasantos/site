@@ -1,16 +1,35 @@
 const minhaMain = document.getElementById("main");
 
+//Dados de cadastro
+const nome = document.getElementById("nome");
+const email = document.getElementById("email");
+const telefone = document.getElementById("tel");
+const profissao = document.getElementById("profissao");
+const feminino = document.getElementById("feminino");
+const masculino = document.getElementById("masculino");
+
 function salvar() {
   //Criei o elemento
   var minhaDiv = document.createElement("div");
+  var image;
   //o javascript adiciona um <p> nesta div
+
+  if (feminino.checked) {
+    image = "img/menina.jpg";
+  } else if (masculino.checked) {
+    image = "img/menino.jpg";
+  } else {
+    alert("Você precisa selecionar o gênero!");
+    return;
+  }
+
   minhaDiv.innerHTML = `
-<img src="img/menino.jpg" alt="Avatar" style="width:100%">
+<img src="${image}" alt="Avatar" style="width:100%">
 <div class="container">
-  <h4><b>John Doe</b></h4> 
-  <h3><b>john@email.com</b></h3> 
-  <p>(11) 91234-5678</p>
-  <p>Architect & Engineer</p>
+  <h4><b>${nome.value}</b></h4> 
+  <h3><b>${email.value}</b></h3> 
+  <p>${telefone.value}</p>
+  <p>${profissao.value}</p>
 </div>
 `;
 

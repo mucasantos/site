@@ -58,6 +58,7 @@ form, #main {
   transition: 0.3s;
   width: 30%;
   margin: 10px;
+  padding-bottom: 10px;
 }
 
 .card:hover {
