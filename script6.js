@@ -1,30 +1,27 @@
 // Arrays - Conjunto de dados em um lista
-/*
-Arroz
-Feijão
-Papel toalha
-Sal
-Picanha
-Banana
-Maça
-Goiaba
-Melancia
-*/
-
 /**Numa lista, nos referimos aos itens começando pelo item 0 (zero)*/
 // usamos o index para acessar
-
 var minhaLista = [];
 var produto = document.getElementById("produto")
+//Paga a main que criei pelo ID
+var main = document.getElementById("main")
 
 function salvar() {
   minhaLista.push(produto.value)
   produto.value = ''
 }
-
 function mostrarProdutos() {
+  //Limpo a main, para colocar os dados da lista
+  main.innerHTML = ''
+
   for (var index = 0; index < minhaLista.length; index++) {
-    document.write ("<p>"+ minhaLista[index] + "</p>")
+    //O javascript criou uma div pra mim!
+    var minhaDiv = document.createElement("div")
+    //o javascript adiciona um <p> nesta div
+    minhaDiv.innerHTML = ("<p>"+ minhaLista[index] + "</p>")
+
+    //Adiciona a div criada a main!
+    main.appendChild(minhaDiv)
    } 
 }
 
