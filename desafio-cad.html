@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="desafio.css">
+</head>
+
+<body>
+    <h1>Cadastro de clientes</h1>
+    <form action="">
+        <fieldset>
+            <legend>Cadastro</legend>
+
+            <label for="fname">Nome:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+            <label for="text">Telefone:</label>
+            <input type="text" id="tel" name="tel"><br>
+            <label for="text">Profissão:</label>
+            <input type="text" id="profissao" name="profissao"><br>
+            <div class="genero">
+                <label for="radio">Gênero:</label><br><br>
+                <input type="radio" id="feminino" name="genero">Feminino <br><br>
+                <input type="radio" id="masculino" name="genero">Masculino<br>
+            </div>
+            <input type="button" value="Salvar" onclick="salvar()">
+
+        </fieldset>
+    </form>
+    <h1>Clientes</h1>
+
+    <div id="main">
+        <div class="card">
+            <img src="img/menino.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>John Doe</b></h4>
+                <h3><b>john@email.com</b></h3>
+                <p>(11) 91234-5678</p>
+                <p>Architect & Engineer</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/menina.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>Luiza Doe</b></h4>
+                <h3><b>luiza@email.com</b></h3>
+                <p>(11) 91234-5678</p>
+                <p>Architect & Engineer</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/menino.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>John Doe</b></h4>
+                <h3><b>john@email.com</b></h3>
+                <p>(11) 91234-5678</p>
+                <p>Architect & Engineer</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/menina.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>Luiza Doe</b></h4>
+                <h3><b>luiza@email.com</b></h3>
+                <p>(11) 91234-5678</p>
+                <p>Architect & Engineer</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/menino.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>John Doe</b></h4>
+                <h3><b>john@email.com</b></h3>
+                <p>(11) 91234-5678</p>
+                <p>Architect & Engineer</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/menina.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>Luiza Doe</b></h4>
+                <h3><b>luiza@email.com</b></h3>
+                <p>(11) 91234-5678</p>
+                <p>Architect & Engineer</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="desafio.js"></script>
+</body>
+
+</html>

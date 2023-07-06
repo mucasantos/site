@@ -18,6 +18,7 @@ function mostrarProdutos() {
     //O javascript criou uma div pra mim!
     var minhaDiv = document.createElement("div")
     //o javascript adiciona um <p> nesta div
+    minhaDiv.classList.add("minhadiv")
     minhaDiv.innerHTML = ("<p>"+ minhaLista[index] + "</p>")
 
     //Adiciona a div criada a main!
