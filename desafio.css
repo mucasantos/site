@@ -38,6 +38,16 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
+.avatar {
+    width: 80px;
+    height:  80px;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+.avatar:hover {
+    opacity: 1;
+}
+
 #main {
   display: flex;
   flex-direction: row;
