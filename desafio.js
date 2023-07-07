@@ -1,3 +1,17 @@
+/**
+ * Presentes dia 06/07
+ * Daniel 
+ * Daniel
+ * Ricardo
+ * Kaua Alves
+ * Kaique
+ * Alex
+ * Carlos
+ * Sabrina
+ * Giovanna
+ * Talita
+ */
+
 const minhaMain = document.getElementById("main");
 
 //Dados de cadastro
