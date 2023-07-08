@@ -1,0 +1,81 @@
+.container {
+    height: 450px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.meu-grid {
+    width: 150px;
+    height: 250px;
+    background-color: brown;
+    display: grid;
+    grid-template-columns: auto auto  ;
+
+   justify-items: center;
+   align-items: center;
+}
+
+.item-grid {
+    height: 50%;
+    width: 80%;
+}
+
+.item {
+    width: 150px;
+    margin: 5px;
+    background-color: grey;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: #04AA6D;
+  }
+
+  .float {
+    float: right;
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+    .float {
+        float: none;
+      }
+  }
+
+  
+
