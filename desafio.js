@@ -1,3 +1,16 @@
+var minhaLista = [
+  "Samuel",
+  46,
+  "1197878-0000",
+  "muca@email.com",
+  "Professor",
+  "Maria",
+  32,
+  "1199998-0909",
+  "maria@email.com",
+  "Dentista",
+];
+
 const minhaMain = document.getElementById("main");
 
 //Dados de cadastro
@@ -8,6 +21,19 @@ const profissao = document.getElementById("profissao");
 //radios
 const feminino = document.getElementById("feminino");
 const masculino = document.getElementById("masculino");
+
+class Pessoa {
+  constructor(nome, email, profissao, telefone, genero, imagem) {
+    this.email = email;
+    this.nome = nome;
+    this.profissao = profissao;
+    this.telefone = telefone;
+    this.genero = genero;
+    this.image = imagem;
+  }
+}
+
+var dadosClientes = [];
 
 function salvar() {
   //Criei o elemento
@@ -22,17 +48,30 @@ function salvar() {
     return;
   }
   //o javascript adiciona um <p> nesta div
+
+  var cadastro = new Pessoa(
+    nome.value, 
+    email.value,
+    profissao.value, 
+    telefone.value,
+    "masculino", 
+    image)
+
+    dadosClientes.push(cadastro);
+        
   minhaDiv.innerHTML = `
             <img src="${image}" alt="Avatar" style="width:100%">
             <div class="container">
-                <h4><b>${nome.value}</b></h4>
-                <h3><b>${email.value}</b></h3>
-                <p>${telefone.value}</p>
-                <p>${profissao.value}</p>
+                <h4><b>${cadastro.nome}</b></h4>
+                <h3><b>${cadastro.email}</b></h3>
+                <p>${cadastro.telefone}</p>
+                <p>${cadastro.profissao}</p>
             </div>
    `;
   //Adicionar uma classe
   minhaDiv.classList.add("card");
   //Adiciona a div criada a main!
   minhaMain.appendChild(minhaDiv);
+
+  console.log(dadosClientes)
 }
