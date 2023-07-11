@@ -1,15 +1,7 @@
-var minhaLista = [
-  "Samuel",
-  46,
-  "1197878-0000",
-  "muca@email.com",
-  "Professor",
-  "Maria",
-  32,
-  "1199998-0909",
-  "maria@email.com",
-  "Dentista",
-];
+/**
+ * Aula sobre classes - Parte 1
+ */
+
 
 const minhaMain = document.getElementById("main");
 
