@@ -1,0 +1,15 @@
+.titulo {
+    color: brown;
+}
+
+#cor {
+    height: 350px;
+    width: 350px;
+    border: 2px solid yellowgreen;
+    background-size: 100%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
