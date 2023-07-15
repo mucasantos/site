@@ -6,3 +6,4 @@ function mudaImagem(numero) {
   document.querySelector(".imagens").style.backgroundImage =
     "url(img/img" + numero + ".jpg)";
 }
+ 

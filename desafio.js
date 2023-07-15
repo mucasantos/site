@@ -2,7 +2,6 @@
  * Aula sobre classes - Parte 1
  */
 
-
 const minhaMain = document.getElementById("main");
 
 //Dados de cadastro
@@ -42,15 +41,16 @@ function salvar() {
   //o javascript adiciona um <p> nesta div
 
   var cadastro = new Pessoa(
-    nome.value, 
+    nome.value,
     email.value,
-    profissao.value, 
+    profissao.value,
     telefone.value,
-    "masculino", 
-    image)
+    "masculino",
+    image
+  );
 
-    dadosClientes.push(cadastro);
-        
+  dadosClientes.push(cadastro);
+
   minhaDiv.innerHTML = `
             <img src="${image}" alt="Avatar" style="width:100%">
             <div class="container">
@@ -65,5 +65,6 @@ function salvar() {
   //Adiciona a div criada a main!
   minhaMain.appendChild(minhaDiv);
 
-  console.log(dadosClientes)
+  console.log(dadosClientes);
 }
+
