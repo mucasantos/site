@@ -5,7 +5,7 @@ var minhaLista = [];
 var produto = document.getElementById("produto")
 //Paga a main que criei pelo ID
 var main = document.getElementById("main")
-
+ 
 function salvar() {
   minhaLista.push(produto.value)
   produto.value = ''

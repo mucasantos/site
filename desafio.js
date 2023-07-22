@@ -1,4 +1,7 @@
 /**
+ * Lista (Array)
+ * 
+ * 
  * Aula sobre classes - Parte 1
  */
 
@@ -9,9 +12,11 @@ const nome = document.getElementById("nome");
 const email = document.getElementById("email");
 const telefone = document.getElementById("tel");
 const profissao = document.getElementById("profissao");
+
 //radios
 const feminino = document.getElementById("feminino");
 const masculino = document.getElementById("masculino");
+
 
 class Pessoa {
   constructor(nome, email, profissao, telefone, genero, imagem) {
@@ -21,6 +26,17 @@ class Pessoa {
     this.telefone = telefone;
     this.genero = genero;
     this.image = imagem;
+  }
+}
+
+class Carro {
+  constructor(marca, modelo, ano, cor, motor, combustivel) {
+    this.marca = marca;
+    this.modelo = modelo;
+    this.ano = ano;
+    this.cor = cor;
+    this.motor = motor;
+    this.combustivel = combustivel;
   }
 }
 
@@ -65,6 +81,7 @@ function salvar() {
   //Adiciona a div criada a main!
   minhaMain.appendChild(minhaDiv);
 
-  console.log(dadosClientes);
+  console.log(dadosClientes)
+
 }
 

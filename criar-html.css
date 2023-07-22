@@ -1,4 +1,16 @@
 .color {
     background-color: violet;
-    height: 200px;
+  
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: burlywood;
+}
+
+.card {
+    margin: 10px;
+    background-color: red;
+    border-radius: 10px;
 }

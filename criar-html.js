@@ -4,7 +4,11 @@ const telefone = document.getElementById("telefone");
 const nome = document.getElementById("nome");
 
 function salvar() {
-    minhaDiv.innerHTML = `
+  var criarDiv = document.createElement("div");
+
+  criarDiv.classList.add("card")
+
+  criarDiv.innerHTML = `
 <h2>Cadastro 01</h2>
 <div class = "color">
 <h3>Nome: ${nome.value}</h3>
@@ -13,5 +17,5 @@ function salvar() {
 </div>
 `;
 
-    
+  minhaDiv.appendChild(criarDiv);
 }
