@@ -37,7 +37,6 @@ function calcular(operacao) {
     alert(error)
   }
 
-  
   console.log(minhaSoma)
 
 
