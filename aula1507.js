@@ -26,6 +26,22 @@ var resultado = document.getElementById("resultado");
 function calcular(operacao) {
   //Criei uma variável pra guardar a soma!
 
+  try {
+    var minhaSoma = eval("Number(numero1.value)" + operacao +"Number(numero2.value)");
+
+    if (isNaN(minhaSoma)) {
+      alert("Verifique os campos...")
+      return
+    }
+  } catch (error) {
+    alert(error)
+  }
+
+  
+  console.log(minhaSoma)
+
+
+/*
   if (operacao === "+") {
     var minhaSoma = Number(numero1.value) + Number(numero2.value);
   } else if (operacao === "-") {
@@ -37,6 +53,8 @@ function calcular(operacao) {
   } else {
     alert("Não conheço!!!")
   }
+
+  */
   if (minhaSoma < 0) {
     resultado.style.color = "red";
   } else if (minhaSoma > 100 && minhaSoma < 200) {
